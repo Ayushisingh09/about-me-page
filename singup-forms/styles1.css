@@ -1,25 +1,167 @@
-input{
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
-    width: 250px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-form{
-    max-width: 300px;
-    margin: 50px auto ;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: rgb(111, 221, 231);
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #6b73ff, #9b59b6, #ff6ec4, #7873f5);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  font-family: Arial, sans-serif;
 }
-button{
-    display: block;
-    margin: 10px auto 0 auto;
-    padding: 10px 20px;
-    background-color: #f58df7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-   
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.card {
+    animation: fadeIn 1s ease-in-out;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card label {
+  color: black;
+  font-size: 14px;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.card input {
+     animation: fadeIn 0.6s ease-in-out;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  color: black;
+  outline: none;
+}
+
+.card input::placeholder {
+ color: rgba(1, 0, 0, 0.726);
+}
+.card input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+.card button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: white;
+  color: #6b73ff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button[type="submit"]:hover {
+  background: #f0f0f0;
+  transform: scale(1.03);
+}
+.shape {
+  position: absolute;
+  border-radius: 20%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.shape1 {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  right: 15%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.shape2 {
+  width: 60px;
+  height: 60px;
+  bottom: 15%;
+  left: 10%;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+.login-link {
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: black;
+  font-weight: bold;
+}
+
+.social-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-buttons p {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.social-buttons button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.google-button {
+  background: white;
+  color: #db4437;
+}
+
+.facebook-button {
+  background: #3b5998;
+  color: white;
+} 
