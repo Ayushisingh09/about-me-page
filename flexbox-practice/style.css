@@ -1,0 +1,12 @@
+.container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    gap: 20px;
+}
+.box{
+    width: 10px;
+    height: 100px;
+    background-color: rgb(221, 90, 245);
+}
