@@ -1,0 +1,25 @@
+input{
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 250px;
+}
+form{
+    max-width: 300px;
+    margin: 50px auto ;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(111, 221, 231);
+}
+button{
+    display: block;
+    margin: 10px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #f58df7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
