@@ -1,0 +1,12 @@
+h1{
+  color:rgb(218, 27, 218);
+}
+body{
+  background-color:lightblue;
+  font-family: Arial;
+  padding: 25px;
+}
+img{
+  width: 250px;
+  border-radius: 10px;
+}
