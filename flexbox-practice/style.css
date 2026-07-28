@@ -4,9 +4,10 @@
     align-items: center;
     height:100vh;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .box{
-    width: 10px;
+    width: 200px;
     height: 100px;
     background-color: rgb(221, 90, 245);
 }
